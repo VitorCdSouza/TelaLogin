@@ -49,7 +49,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\MerriweatherSans-Bold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-ExtraBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Italic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Light.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-LightItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Medium.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-MediumItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Regular.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-SemiBoldItalic.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 

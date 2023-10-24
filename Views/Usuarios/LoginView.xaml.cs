@@ -8,8 +8,9 @@ public partial class LoginView : ContentPage
 	public LoginView()
 	{
 		InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
 
-		usuarioViewModel = new UsuarioViewModel();
+        usuarioViewModel = new UsuarioViewModel();
 		BindingContext = usuarioViewModel;
 	}
 }

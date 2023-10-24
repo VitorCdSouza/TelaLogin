@@ -7,6 +7,7 @@ using TelaLogin.Services.Usuarios;
 using TelaLogin.Models;
 using System.Windows.Input;
 using TelaLogin.Services.Usuarios;
+using TelaLogin.Views.Usuarios;
 
 namespace TelaLogin.ViewModels.Usuarios
 {
@@ -33,11 +34,11 @@ namespace TelaLogin.ViewModels.Usuarios
 
         #region AtributosPropiedades
 
-        private string login = string.Empty;
-        public string Login { 
-            get { return login; } 
+        private string nome = string.Empty;
+        public string Nome { 
+            get { return nome; } 
             set {  
-                login = value;
+                nome = value;
                 OnPropertyChanged();
             } 
         }
@@ -58,7 +59,7 @@ namespace TelaLogin.ViewModels.Usuarios
             try
             {
                 Usuario u = new Usuario();
-                u.Username = Login;
+                u.Nome = Nome;
                 u.PasswordString = Senha;
 
                 Usuario uRegistrado = await uService.PostRegistrarUsuarioAsync(u);
@@ -84,24 +85,24 @@ namespace TelaLogin.ViewModels.Usuarios
             try
             {
                 Usuario u = new Usuario();
-                u.Username = Login;
+                u.Nome = Nome;
                 u.PasswordString = Senha;
 
                 Usuario uAutenticado = await uService.PostAutenticarUsuarioAsync(u);
 
                 if (!string.IsNullOrEmpty(uAutenticado.Token)) 
                 {
-                    string mensagem = $"Bem-vindo(a) {uAutenticado.Username}.";
+                    string mensagem = $"Bem-vindo(a) {uAutenticado.Nome}.";
 
                     Preferences.Set("UsuarioId", uAutenticado.Id);
-                    Preferences.Set("UsuarioUsername", uAutenticado.Username);
+                    Preferences.Set("UsuarioNome", uAutenticado.Nome);
                     Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new MainPage();
+                    Application.Current.MainPage = new LoginView();
                 }
                 else
                 {

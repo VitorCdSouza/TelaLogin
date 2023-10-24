@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor\\source\\repos\\TelaLogin\\TelaLogin.csproj": {}
+    "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\TelaLogin\\TelaLogin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor\\source\\repos\\TelaLogin\\TelaLogin.csproj": {
+    "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\TelaLogin\\TelaLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\source\\repos\\TelaLogin\\TelaLogin.csproj",
+        "projectUniqueName": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\TelaLogin\\TelaLogin.csproj",
         "projectName": "TelaLogin",
-        "projectPath": "C:\\Users\\vitor\\source\\repos\\TelaLogin\\TelaLogin.csproj",
+        "projectPath": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\TelaLogin\\TelaLogin.csproj",
         "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\source\\repos\\TelaLogin\\obj\\",
+        "outputPath": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\TelaLogin\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -89,6 +89,10 @@
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -212,6 +216,10 @@
               "version": "[7.0.86, )",
               "autoReferenced": true
             },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -278,6 +286,10 @@
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -351,6 +363,10 @@
               "target": "Package",
               "version": "[7.0.86, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "Microsoft.Windows.SDK.BuildTools": {
               "suppressParent": "All",

@@ -12,39 +12,39 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = TelaLogin
-build_property.ProjectDir = C:\Users\vitor\source\repos\TelaLogin\
+build_property.ProjectDir = E:\Organizados\Etec\3 Bimestre\PAM\TelaLogin\
 
-[C:/Users/vitor/source/repos/TelaLogin/App.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/vitor/source/repos/TelaLogin/AppShell.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/vitor/source/repos/TelaLogin/MainPage.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/vitor/source/repos/TelaLogin/Resources/Styles/Colors.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/vitor/source/repos/TelaLogin/Resources/Styles/Styles.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/vitor/source/repos/TelaLogin/Views/Usuarios/LoginView.xaml]
+[E:/Organizados/Etec/3 Bimestre/PAM/TelaLogin/Views/Usuarios/LoginView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Usuarios.LoginView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml
