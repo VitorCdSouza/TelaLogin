@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.Views.NovaReserva.ReservaView"
+             Title="ReservaView">
+    <Grid>
+        <!-- Set the background image -->
+        <Image Source="logo.png" Aspect="Center" Opacity="0.5" WidthRequest="100"/>
+
+        <!-- Your content goes here -->
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" >
+
+        <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#039298" CornerRadius="0">
+            <StackLayout  Orientation="Horizontal" Spacing="70" Background="Transparent" VerticalOptions="Center" HorizontalOptions="Start">
+                <ImageButton Source="seta.png" HorizontalOptions="Center" Background="Transparent"></ImageButton>
+                <Label FontSize="Medium" Margin="9" FontAttributes="Bold" Text="Área de Reserva"/>
+            </StackLayout>
+        </Frame>
+        <!-- Espaço para o logotipo -->
+
+            <StackLayout>
+                <Frame WidthRequest="340" HeightRequest="120" CornerRadius="10" BackgroundColor="#B0C4CC" HasShadow="True">
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
+                        <Label TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontSize="Medium" FontAttributes="Bold" Text ="Reserva do Local: " />
+                                    <Span Text="{Binding Senha}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Orientation="Horizontal" Spacing="48">
+                            <Label TextColor="Black">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="Medium" FontAttributes="Bold" Text="Dia: " />
+                                        <Span Text="{Binding Senha}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="20">
+                            <Label TextColor="Black">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="Medium" FontAttributes="Bold" Text="Entrada: " />
+                                        <Span Text="{Binding Senha}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label TextColor="Black">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="Medium" FontAttributes="Bold" Text="Saida: " />
+                                        <Span Text="{Binding Senha}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+        <BoxView HeightRequest="455" Color="Transparent" />
+        <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center">
+        <!-- Botão de Novar Reserva -->
+            <Button Text="Editar"  BorderWidth="1" BorderColor="#039298" FontAttributes="Bold" BackgroundColor="white" Command="{Binding AutenticarCommand}" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>
+
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+            <!-- Botão de Editar -->
+            <Button Text="Nova Reserva" FontAttributes="Bold" BackgroundColor="#039298" Command="{Binding AutenticarCommand}" TextColor="white" HorizontalOptions="End" BorderColor="#039298" CornerRadius="20" HeightRequest="45" WidthRequest="150"/>
+        </StackLayout>
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+    </StackLayout>
+    </Grid>
+</ContentPage>
