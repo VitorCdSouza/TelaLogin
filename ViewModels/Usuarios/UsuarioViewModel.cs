@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using TelaLogin.Services.Usuarios;
 using TelaLogin.Models;
 using System.Windows.Input;
-using TelaLogin.Services.Usuarios;
 using TelaLogin.Views.Usuarios;
 
 namespace TelaLogin.ViewModels.Usuarios
@@ -102,7 +101,7 @@ namespace TelaLogin.ViewModels.Usuarios
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new LoginView();
+                    Application.Current.MainPage = new AppShell();
                 }
                 else
                 {

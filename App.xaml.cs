@@ -6,6 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new NavigationPage(new Views.NovaReserva.ReservaView());
+		MainPage = new NavigationPage(new Views.Usuarios.LoginView());
 	}
 }

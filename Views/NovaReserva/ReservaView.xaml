@@ -2,24 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.Views.NovaReserva.ReservaView"
-             Title="ReservaView">
+             Title="Reservas"
+             >
     <Grid>
         <!-- Set the background image -->
         <Image Source="logo.png" Aspect="Center" Opacity="0.5" WidthRequest="100"/>
 
         <!-- Your content goes here -->
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" >
-
+        <!--
         <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#039298" CornerRadius="0">
             <StackLayout  Orientation="Horizontal" Spacing="70" Background="Transparent" VerticalOptions="Center" HorizontalOptions="Start">
                 <ImageButton Source="seta.png" HorizontalOptions="Center" Background="Transparent"></ImageButton>
                 <Label FontSize="Medium" Margin="9" FontAttributes="Bold" Text="Área de Reserva"/>
             </StackLayout>
-        </Frame>
+        </Frame>-->
         <!-- Espaço para o logotipo -->
 
             <StackLayout>
-                <Frame WidthRequest="340" HeightRequest="120" CornerRadius="10" BackgroundColor="#B0C4CC" HasShadow="True">
+                <Frame WidthRequest="340" HeightRequest="120" CornerRadius="10" BackgroundColor="#B0C4CC" HasShadow="True" Margin="0, 10, 0, 0">
                     <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
                         <Label TextColor="Black">
                             <Label.FormattedText>
@@ -63,7 +64,7 @@
             </StackLayout>
 
             <!-- Espaço em branco no topo para ajustar a posição da imagem -->
-        <BoxView HeightRequest="455" Color="Transparent" />
+        <BoxView HeightRequest="445" Color="Transparent" />
         <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center">
         <!-- Botão de Novar Reserva -->
             <Button Text="Editar"  BorderWidth="1" BorderColor="#039298" FontAttributes="Bold" BackgroundColor="white" Command="{Binding AutenticarCommand}" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>

@@ -3,12 +3,65 @@
     x:Class="TelaLogin.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TelaLogin"
-    Shell.FlyoutBehavior="Disabled">
+    BackgroundColor="#039298"
+    xmlns:viewsReserva="clr-namespace:TelaLogin.Views.NovaReserva"
+    xmlns:viewsUsuario="clr-namespace:TelaLogin.Views.Usuarios"
+    xmlns:local="clr-namespace:TelaLogin">
 
-    <ShellContent
-        Title="Home"
+    <Shell.FlyoutHeaderTemplate >
+        <DataTemplate >
+            <Grid BackgroundColor="#039298">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="{OnPlatform Android=130, iOS=200}" />
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center">
+                    <Frame Padding="0" CornerRadius="40" HeightRequest="80" WidthRequest="80" >
+                        <Image Source="logo.png"/>
+                    </Frame>
+                    <VerticalStackLayout Padding="10, 0, 0, 0" Spacing="0">
+                        <Label Text="Condominus" FontAttributes="Bold" FontSize="Medium" TextColor="white"/>
+                        <Label Text="Os Ex-Melhores" TextColor="white"/>
+                    </VerticalStackLayout>
+                </FlexLayout>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent 
+        Title="Home" Icon="home.svg"
         ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+
+        <ShellContent
+           
+        Title="Reservas" Icon="menuusarios.svg"
+        ContentTemplate="{DataTemplate viewsReserva:ReservaView}"
+        Route="MainPage"
+        />
+
+
+        <!--      <ShellContent
+        Title="Personagens" Icon="menupersonagens.svg"
+        ContentTemplate="{DataTemplate viewsPersonagens:ListagemView}"
         Route="MainPage" />
+
+        <ShellContent
+        Title="Disputas"  Icon="menudisputas.svg"
+        ContentTemplate="{DataTemplate viewsDisputas:ListagemView}"
+        Route="MainPage" />-->
+
+        <Tab Title="Info" Route="info" Icon="info.svg" >
+            <ShellContent Title="Sobre" Route="sobre" ContentTemplate="{DataTemplate local:AboutView}"/>
+            <ShellContent Title="Descrição" Route="desc" ContentTemplate="{DataTemplate local:DescriptionView}"/>
+        </Tab>
+
+    </FlyoutItem>
+    <ShellContent Title="Sair" Icon="Exit.png" ContentTemplate="{DataTemplate viewsUsuario:LoginView}"/>
+
+    <Shell.FlyoutFooter>
+        <Label x:Name="lblLogin" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+    </Shell.FlyoutFooter>
 
 </Shell>
