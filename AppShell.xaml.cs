@@ -1,4 +1,5 @@
-﻿namespace TelaLogin;
+﻿using TelaLogin.Views.Usuarios;
+namespace TelaLogin;
 
 public partial class AppShell : Shell
 {
@@ -7,5 +8,10 @@ public partial class AppShell : Shell
 		InitializeComponent();
         string login = Preferences.Get("UsuarioUsername", string.Empty);
         lblLogin.Text = $"login: {login}";
+    }
+    private async void OnSairTapped(object sender, EventArgs e)
+    {
+        // Close the AppShell
+        await Navigation.PushAsync(new LoginView());
     }
 }

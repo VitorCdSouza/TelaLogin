@@ -6,6 +6,7 @@
     BackgroundColor="#039298"
     xmlns:viewsReserva="clr-namespace:TelaLogin.Views.NovaReserva"
     xmlns:viewsUsuario="clr-namespace:TelaLogin.Views.Usuarios"
+    
     xmlns:local="clr-namespace:TelaLogin">
 
     <Shell.FlyoutHeaderTemplate >
@@ -59,7 +60,6 @@
 
     </FlyoutItem>
     <ShellContent Title="Sair" Icon="Exit.png" ContentTemplate="{DataTemplate viewsUsuario:LoginView}"/>
-
     <Shell.FlyoutFooter>
         <Label x:Name="lblLogin" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
     </Shell.FlyoutFooter>

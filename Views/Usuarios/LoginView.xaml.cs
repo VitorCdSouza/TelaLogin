@@ -19,4 +19,5 @@ public partial class LoginView : ContentPage
         await Navigation.PushAsync(new CadastrarView());
 
     }
+
 }

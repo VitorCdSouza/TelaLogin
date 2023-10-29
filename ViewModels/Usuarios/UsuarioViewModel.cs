@@ -114,6 +114,8 @@ namespace TelaLogin.ViewModels.Usuarios
                 await Application.Current.MainPage
                     .DisplayAlert("Informação", ex.Message + " Detalhes " + ex.InnerException, "Ok");
             }
+
+
         }
         #endregion
     }
